@@ -2,112 +2,138 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className=' w-screen h-screen flex justify-center items-center'>
+      <div className=' w-11/12 lg:w-[1024px] flex flex-col md:h-auto md:pt-0  pt-10 h-screen md:grid grid-cols-4 grid-rows-2 gap-6'>
+        <div className=' md:text-[10px] lg:text-xs text-white col-start-1 col-end-3 row-start-1 row-end-2 p-7 rounded-lg space-y-3 bg-quot bg-no-repeat  bg-right-top bg-custom-100'>
+          <div className=' flex flex-row'>
+            <div>
+              <Image
+              src={"/images/image-daniel.jpg"}
+              width={56}
+              height={56}
+              className=' rounded-full ring-2 ring-custom-400 ring-opacity-70 w-8 h-8 lg:w-10 lg:h-10'
+              alt='daniel'/>
+            </div>
+            <div className=' ml-3 flex flex-col'>
+              <div>
+                Daniel Clifford
+              </div>
+              <div className=' text-custom-400 text-opacity-50'>
+                Verified Graduate
+              </div>
+            </div>
+          </div>
+          <div className=' text-lg md:text-sm lg:text-lg font-semibold'>
+            I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.
+          </div>
+          <div className=' text-custom-400 text-opacity-70'>
+            “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+          </div>
+        </div>
+        <div className=' md:text-[10px] lg:text-xs text-white col-start-3 col-end-4 row-start-1 row-end-2 bg-custom-200 p-7 rounded-lg space-y-3'>
+          <div className=' flex flex-row'>
+            <div>
+              <Image
+              src={"/images/image-jonathan.jpg"}
+              width={56}
+              height={56}
+              className=' rounded-full ring-2 ring-custom-400 ring-opacity-70 w-8 h-8 lg:w-10 lg:h-10'
+              alt='jonathan'/>
+            </div>
+            <div className=' ml-3 flex flex-col'>
+              <div>
+                Jonathan Walters
+              </div>
+              <div className=' text-custom-400 text-opacity-50'>
+                Verified Graduate
+              </div>
+            </div>
+          </div>
+          <div className='text-lg md:text-sm lg:text-lg font-semibold'>
+            The team was very supportive and kept me motivated
+          </div>
+          <div className=' text-custom-400 text-opacity-70'>
+            “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ” 
+          </div>
+        </div>
+        <div className=' md:text-[10px] lg:text-xs col-start-1 col-end-2 row-start-2 row-end-2 bg-white p-7 rounded-lg space-y-3'>
+          <div className=' flex flex-row'>
+            <div>
+              <Image
+              src={"/images/image-jeanette.jpg"}
+              width={56}
+              height={56}
+              className=' rounded-full ring-2 ring-custom-400 ring-opacity-70 w-8 h-8 lg:w-10 lg:h-10'
+              alt='jeanette'/>
+            </div>
+            <div className=' ml-3 flex flex-col'>
+              <div className=' text-custom-300'>
+                Jeanette Harmon
+              </div>
+              <div className=' text-custom-300 text-opacity-50'>
+                Verified Graduate
+              </div>
+            </div>
+          </div>
+          <div className='text-lg md:text-sm lg:text-lg font-semibold'>
+            An overall wonderful and rewarding experience
+          </div>
+          <div className=' text-custom-300 text-opacity-70'>
+            “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”
+          </div>
+        </div>
+        <div className=' md:text-[10px] lg:text-xs text-white  col-start-2 col-end-4 row-start-2 row-end-2 p-7 rounded-lg space-y-3 bg-custom-300'>
+          <div className=' flex flex-row'>
+            <div>
+              <Image
+              src={"/images/image-patrick.jpg"}
+              width={56}
+              height={56}
+              className=' rounded-full ring-2 ring-custom-100 ring-opacity-70 w-8 h-8 lg:w-10 lg:h-10'
+              alt='patrick'/>
+            </div>
+            <div className=' ml-3 flex flex-col'>
+              <div>
+                Patrick Abrams
+              </div>
+              <div className=' text-custom-400 text-opacity-50'>
+                Verified Graduate
+              </div>
+            </div>
+          </div>
+          <div className='text-lg md:text-sm lg:text-lg font-semibold'>
+            Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.
+          </div>
+          <div className=' text-custom-400 text-opacity-70'>
+            “ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ”
+          </div>
+        </div>
+        <div className=' md:text-[10px] lg:text-xs col-start-4 col-end-4 row-start-1 row-end-3 bg-white p-7 rounded-lg space-y-3'>
+          <div className=' flex flex-row'>
+            <div>
+              <Image
+              src={"/images/image-kira.jpg"}
+              width={56}
+              height={56}
+              className=' rounded-full ring-2 ring-custom-400 ring-opacity-70 w-8 h-8 lg:w-10 lg:h-10'
+              alt='kira'/>
+            </div>
+            <div className=' ml-3 flex flex-col'>
+              <div className=' text-custom-300'>
+                Kira Whittle
+              </div>
+              <div className=' text-custom-300 text-opacity-50'>
+                Verified Graduate
+              </div>
+            </div>
+          </div>
+          <div className='text-lg md:text-sm lg:text-lg font-semibold'>
+            Such a life-changing experience. Highly recommended! 
+          </div>
+          <div className=' text-custom-300  text-opacity-70'>
+            “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend! ”
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
+    </div>
+  )}
